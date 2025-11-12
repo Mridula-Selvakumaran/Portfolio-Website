@@ -1,0 +1,62 @@
+portfolio-website/
+│
+├── public/
+│   ├── assets/
+│   │   ├── images/
+│   │   │   ├── mountains.svg
+│   │   │   ├── clouds.svg
+│   │   │   ├── sun.svg
+│   │   │   ├── stars.svg
+│   │   │   └── profile.jpg
+│   │   └── icons/
+│   │       ├── github.svg
+│   │       ├── linkedin.svg
+│   │       └── mail.svg
+│   └── favicon.ico
+│
+├── src/
+│   ├── assets/
+│   │   ├── animations/
+│   │   │   ├── skyGradients.js   ← gradient data (night → dawn)
+│   │   │   └── framerVariants.js ← motion configs for framer-motion
+│   │   └── index.js              ← export all assets for easy import
+│   │
+│   ├── components/
+│   │   ├── Intro/
+│   │   │   ├── SkyTransition.jsx ← handles sky color + stars/sun animation
+│   │   │   ├── MountainLayer.jsx ← layered parallax mountains
+│   │   │   └── ScrollTrigger.jsx ← detects scroll & locks until animation ends
+│   │   │
+│   │   ├── Layout/
+│   │   │   ├── Navbar.jsx
+│   │   │   ├── Footer.jsx
+│   │   │   └── Container.jsx     ← consistent layout wrapper
+│   │   │
+│   │   ├── Sections/
+│   │   │   ├── About.jsx
+│   │   │   ├── Education.jsx
+│   │   │   ├── Projects.jsx
+│   │   │   ├── Contact.jsx
+│   │   │   └── Media.jsx (optional)
+│   │   │
+│   │   └── Shared/
+│   │       ├── Button.jsx
+│   │       ├── Card.jsx
+│   │       └── IconLink.jsx
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx   ← combines Intro + sections (main landing)
+│   │   └── Error404.jsx
+│   │
+│   ├── styles/
+│   │   ├── globals.css    ← base tailwind imports + global tweaks
+│   │   └── animations.css ← keyframes or fine-tuned transitions
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── package.json
+├── tailwind.config.js
+└── postcss.config.js
